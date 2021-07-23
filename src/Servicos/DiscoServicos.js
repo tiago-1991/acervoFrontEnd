@@ -16,7 +16,7 @@ class DiscoServicos{
     createDisco(disco){
 
         console.log(disco);
-        return axios.post(urlbase+"/novoDisco", disco);
+        return axios.post(urlbase+"/novoDisco/", disco);
 
     }
 

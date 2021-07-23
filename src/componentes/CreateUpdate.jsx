@@ -26,6 +26,7 @@ class CreateUpdate extends Component {
             return false
         }else{
         return DiscoServicos.getDiscoById(this.state.id_Disco).then((res)=>{
+            console.log(res.data);
             let disco = res.data;
             this.setState({
             nomedoDisco: disco.nomedoDisco,
